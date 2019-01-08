@@ -18,16 +18,15 @@ end
 def word_substituter(tweet)
   # takes in tweet, shortens it based on substitutes in dictionary method
   new = []
-    tweet.split(" ").each do |word| # array loop
-      dictionary.each do |k,v|
+    tweet.split(" ").each do |word| # make tweet an array and loop over it:
+      dictionary.each do |k,v| # for each word in tweet, compare it to each key in hash (stop if match found)
         if word == k.to_s
-          word = v
+          word = v # if a key matches, reassign the word variable with the corresponding value.
         end
       end
-      new << word
+      new << word # push the word into the new array, whether it was changed or not.  Exit the hash loop and go back to the next iteration of the array loop (until all words checked)
     end
-  new.join(" ")
-
+  new.join(" ") # return the new array as a string
 end
 
 def bulk_tweet_shortener(array_of_tweets)
