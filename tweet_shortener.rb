@@ -17,7 +17,6 @@ end
 
 def word_substituter(tweet)
   # takes in tweet, shortens it based on substitutes in dictionary method
-  if tweet.length > 140
     new = [] # initialise an empty array to hold results of the loops to be performed...
       tweet.split(" ").each do |word| # make tweet an array and loop over it:
         dictionary.each do |k,v| # for each word in tweet, compare it to each key in hash within the dictionary method
@@ -28,7 +27,6 @@ def word_substituter(tweet)
         new << word # push the word into the new array, whether it was changed or not.  Exit the hash loop and go back to the next iteration of the array loop (until all words checked)
       end
     new.join(" ") # return the new array as a string
-  end
 end
 # I found the idea of using .keys on the hash was a bit misleading here
 
