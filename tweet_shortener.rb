@@ -19,7 +19,7 @@ def word_substituter(tweet)
   # takes in tweet, shortens it based on substitutes in dictionary method
   new = [] # initialise an empty array to hold results of the loops to be performed...
     tweet.split(" ").each do |word| # make tweet an array and loop over it:
-      dictionary.each do |k,v| # for each word in tweet, compare it to each key in hash (stop if match found)
+      dictionary.each do |k,v| # for each word in tweet, compare it to each key in hash within the dictionary method
         if word == k.to_s
           word = v # if a key matches, reassign the corresponding value to the word variable.
         end
