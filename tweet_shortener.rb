@@ -50,5 +50,7 @@ def shortened_tweet_truncator(tweet)
     if trunk_or_no.length > 140
       # truncate
         trunk_or_no[0..135] + "(..)"
+    else
+      trunk_or_no
     end
 end
