@@ -49,5 +49,5 @@ def shortened_tweet_truncator(tweet)
    word_substituter(tweet).chars.length > 140
     # truncate
 
-  end
+  
 end
