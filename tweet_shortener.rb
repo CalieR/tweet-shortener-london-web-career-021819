@@ -28,9 +28,11 @@ def word_substituter(tweet)
     end
   new.join(" ") # return the new array as a string
 end
+# I found the idea of using .keys on the hash was a bit misleading here
 
 def bulk_tweet_shortener(array_of_tweets)
   # shortens an array of tweets and puts result
+  puts word_substituter(array_of_tweets)
 end
 
 def selective_tweet_shortener
