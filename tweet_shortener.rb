@@ -32,9 +32,7 @@ end
 
 def bulk_tweet_shortener(array_of_tweets)
   # shortens an array of tweets and puts result
-  array_of_tweets.each do |x|
-    puts word_substituter(x)
-  end
+  array_of_tweets.each { |x| puts word_substituter(x) }
 end
 
 def selective_tweet_shortener
