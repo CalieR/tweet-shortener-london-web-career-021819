@@ -47,7 +47,7 @@ end
 def shortened_tweet_truncator(tweet)
   # truncates tweet to 140 chars with (...) if still too long after substitution
    trunk_or_no = word_substituter(tweet).length
- trunk_or_no  
+ trunk_or_no.class  
     # truncate
 
 end
